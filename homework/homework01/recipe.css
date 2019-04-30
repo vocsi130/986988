@@ -1,0 +1,73 @@
+.ti {
+    color:  #A4A400;
+    background-color:#F0F0F0;
+     font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+     font-weight: bold;
+     font-size: 22px;
+   text-align:center;
+   text-decoration: underline;
+}
+
+h1 {
+     font-weight: normal;
+     font-size: 18px;
+    text-align: left;
+    color:  #A4A400;
+    background-color:#F0F0F0;
+   text-align:left;
+   text-decoration: underline;
+   word-spacing: 0.25em;
+}
+body{
+     font-size: 11px;
+    color:  #404040;
+     font-family: Georgia, Garamond, sans-serif;
+       background-image: url("images/silverware.jpg");   
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  width: 10%;
+}
+#trait_dessus 
+{ 
+width: 940px;
+    height: auto;
+    clear: both;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-top: -20px;
+    background-color: white;
+
+}
+
+h6{
+ line-height:0px;
+ margin: 0.1
+ }
+ 
+ #ul1{
+     
+  list-style-type:none;
+ }
+ a{
+    color:  #A4A400;
+     
+ }  
+ 
+ .ulimage{
+     list-style-image: url('images/pie_icon.gif');
+  }
+ footimage{
+  background:url("images/w3c-css.png");
+    background-position: right;
+    width: 200px;
+    background-color: white;
+    opacity: 1.0;
+ }
+  blockquote {
+    background: #FFFFA8;
+    border-radius: 5px;
+     font-style: italic;
+}
