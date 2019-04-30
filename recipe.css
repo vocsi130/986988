@@ -59,7 +59,13 @@ h6{
  .ulimage{
      list-style-image: url('images/pie_icon.gif');
   }
- 
+ footimage{
+  background:url("images/w3c-css.png");
+    background-position: right;
+    width: 200px;
+    background-color: white;
+    opacity: 1.0;
+ }
   blockquote {
     background: #FFFFA8;
     border-radius: 5px;
