@@ -22,16 +22,9 @@ body{
      font-size: 11px;
     color:  #404040;
      font-family: Georgia, Garamond, sans-serif;
-       background-image: url("images/silverware.jpg");
-       background-repeat: no-repeat, repeat;
-       height: 500px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
-  
-
-      
+       background-image: url("images/silverware.jpg");   
 }
+
 img {
   display: block;
   margin-right: auto;
@@ -58,10 +51,17 @@ h6{
      
   list-style-type:none;
  }
-  
- 
- #ulimage{
+ a{
+    color:  #A4A400;
      
-  list-style-type:none;
- }
+ }  
  
+ .ulimage{
+     list-style-image: url('images/pie_icon.gif');
+  }
+ 
+  blockquote {
+    background: #FFFFA8;
+    border-radius: 5px;
+     font-style: italic;
+}
