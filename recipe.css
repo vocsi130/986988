@@ -22,14 +22,14 @@ body{
      font-size: 11px;
     color:  #404040;
      font-family: Georgia, Garamond, sans-serif;
-       background-image: url("images/silverware.jpg");   
+   /*    background-image: url("images/silverware.jpg");   */
 }
 
-img {
+/*img {
   display: block;
   margin-right: auto;
   width: 10%;
-}
+}*/
 #trait_dessus 
 { 
 width: 940px;
