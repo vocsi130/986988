@@ -1,0 +1,74 @@
+.backg { 
+  
+}
+
+body {
+	text-align: center;
+        font-size: 8pt;
+        margin: 0px;
+        padding: 0px;
+         font-family: Verdana, Tahoma, Sans-Serif;
+         background-image: url("../../images/background.png");
+ }
+
+ h1movie{
+/*Underneath the image banner is a centered heading
+containing the movie name and year in a 24pt bold font. 
+     */
+   font-family: Tahoma, Verdana, Sans-Serif;
+      font-size: 24pt;
+    	text-align: center;
+        color:#999999;
+        box-shadow: 3px 3px;
+        
+ } 
+div.error {
+	margin-top: 10em;
+	font-size: 20pt;
+}
+div.emoticon {
+	margin: 0.5em;
+	font-weight: bold;
+	font-size: 40pt;
+}
+div.msg {
+	margin-top: 2em;
+}
+div.url {
+	font-weight: bold;
+	margin-top: 1em;
+}
+/* The hero image */
+.top {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+   background-image: url("../../images/bannerbg.png");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: -1;
+ 
+ margin-bottom:  50px;
+ 
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
