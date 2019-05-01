@@ -35,23 +35,23 @@ h6{
   list-style-type:none;
  }
  a{
-    color:  #A4A400;
-     
+    color:  #A4A400;  
  }  
  
  .ulimage{
     
    list-style-image: url("../../images/pie_icon.gif");
    }
- 
-  
- #end{
+
+   #end{
     float: right;
 }
+
 #buttons{
     display: flex;
     justify-content: flex-end;
 }
+
 .barend{
  float: right;
  text-align: right;
