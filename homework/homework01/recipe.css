@@ -1,7 +1,7 @@
-.ti {
+.mainh1 {
     color:  #A4A400;
     background-color:#F0F0F0;
-     font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+     font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
      font-weight: bold;
      font-size: 22px;
    text-align:center;
@@ -22,25 +22,8 @@ body{
      font-size: 11px;
     color:  #404040;
      font-family: Georgia, Garamond, sans-serif;
-       background-image: url("images/silverware.jpg");   
 }
 
-img {
-  display: block;
-  margin-right: auto;
-  width: 10%;
-}
-#trait_dessus 
-{ 
-width: 940px;
-    height: auto;
-    clear: both;
-	padding-left: 10px;
-	padding-top: 5px;
-	margin-top: -20px;
-    background-color: white;
-
-}
 
 h6{
  line-height:0px;
@@ -57,17 +40,35 @@ h6{
  }  
  
  .ulimage{
-     list-style-image: url('images/pie_icon.gif');
-  }
- footimage{
-  background:url("images/w3c-css.png");
-    background-position: right;
-    width: 200px;
-    background-color: white;
-    opacity: 1.0;
+    
+   list-style-image: url("/images/pie_icon.gif");
+   }
+ 
+  
+ #end{
+    float: right;
+}
+#buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.barend{
+ float: right;
+ text-align: right;
+    
+}
+.gras{
+   font-weight: bold; 
+}
+.under{
+   text-decoration: underline; 
+}
+.linet{
+   text-decoration:line-through; 
  }
+ 
   blockquote {
     background: #FFFFA8;
-    border-radius: 5px;
+    border-radius: 0px;
      font-style: italic;
 }
