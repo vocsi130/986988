@@ -59,11 +59,11 @@ h6{
  .ulimage{
     /* list-style-image: url('https://vocsi130.github.io/986988/images/pie_icon.gif');*/
     
-      list-style-image: url('../images/pie_icon.gif');
-  }
+   list-style-image: url("../../images/pie_icon.gif");
+   }
  
   footimage{
-  background:url('../images/w3c-css.png');
+   background: url("../../images/w3c-css.png");
     background-position: right;
     width: 200px;
     background-color: white;
