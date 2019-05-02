@@ -18,8 +18,6 @@ tr:nth-child(even) {
   background-image: url("../images/3d-grid-png-image-20.png");
  height: 100%; 
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
+.heading { color: #FF0000; }
