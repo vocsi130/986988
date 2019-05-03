@@ -100,10 +100,3 @@ footer {
 	font-size: x-small;
 	clear: both;
 }
-label {
-  width:180px;
-  display: inline-table;
-  font-weight: bold;
-   padding: 5px;
-  margin: 5px;
-}
