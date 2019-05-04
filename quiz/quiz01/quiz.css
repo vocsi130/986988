@@ -1,0 +1,16 @@
+.main{
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 18pt;
+    color: blue;
+    text-decoration:underline; 
+    
+}
+
+dt {
+  display: block;
+  margin-top: 2em;
+  /*margin-bottom: 1em;*/
+  margin-left: 0;
+  margin-right: 0;
+}

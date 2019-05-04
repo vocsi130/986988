@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="quiz.css">
+    </head>
+    <body>
+        <h2 class="main">Introduction to Servlets Quiz</h2>
+        <dl>
+          <dt><strong>1. What is the difference between a web server and a web container?</strong></dt>
+	<dd>Web Container or Servlet Container or Servlet Engine : is used to manage the components like servlets, JSP. It is a part of the web server. It is web based, runtime environment to support J2EE components. Just as a "servlet container" (such as provided as Tomcat) is a runtime environment for java servlets. <br>
+	Web Server or HTTP Server: a server which is capable of handling HTTP request send by a client and respond back with a HTTP response. Web server only serves static web pages. Apache, Apache/Tomcat, ISS and JBoss/Tomcat are all examples of web servers. <br>
+	Having web container implies having a web server. But a web server need not have anything to do with containers.</dd>
+        
+        <dt><strong>2. What is a servlet?</strong></dt>
+	<dd>A servlet is a Java class that extends the capabilities of servers that host applications access by means of a request-response programming model.</dd>
+        
+            <dt><strong>3. How do web servers and web containers interact with servlets?</strong></dt>
+			<dd>Web servers interact with servlets with the help of containers. Containers manage the communication between the web servers and servlets. When web servers request for a servlet . Then containers search for servlets based on the URLs. It interacts with servlets with following steps:
+				<ul>
+					<li>Container Creates and initialize the servlets.</li>
+					<li>Containers invokes the service method of the servlets based on the method specified GET or POST.</li>
+					<li>Servlets compute the request object and returns dynamic HTML page stuffed in the response object and send it to the containers.</li>
+					<li>Finally containers send the dynamic HTML page to the web servers.</li>
+				</ul>
+			</dd>
+                      <dt><strong>4. Who creates request objects?</strong></dt>
+                        <dd>Containers create the request objects.</dd>
+                        <dt><strong>5. What are the steps in the servlet life cycle?</strong></dt>
+			<dd>he steps in servlet life cycle are as follows:-
+				<ul>
+                                   <li>Load servlet class (Class c = Class.forname(...))</li>
+                                    <li>Instantiate servlet (c.newInstance());</li>
+                                 <li> init() called only once in the servlet's life. Must complete before Container can call service().</li>
+                           <li>service() (called for each request, each request runs in a separate thread)</li>
+                        <li>destroy() (called only once)</li>
+			</ul>
+			</dd>
+                        <dt><strong>6. Who call init and when?</strong></dt>
+			<dd>Container call init when the servlet is initialised.</dd>
+                        <dt><strong>7. Which of init, service, and doGet should you override?</strong></dt>
+			<dd>We need to override doGet method in the servlet class.</dd>
+                        <dt><strong>8. In what sense are servlets multi-threaded?</strong></dt>
+			<dd>Container automatically creates a new java thread for every servlet request instead of running it in different process. Service method of servlet can be called multiples times each call is run in different thread.</dd>
+                        <dt><strong>9.What are the implications of this for servlet instance variables?</strong> </dt>
+			<dd>Servlet instance variables are not thread safe as the container does not create a new instance of the Servlet class for each request. It reuses an existing one.</dd>
+		</dl>
+            <p> <a href="/986988/index.html">Home</a></p>
+         
+    </body>
+</html>

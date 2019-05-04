@@ -15,7 +15,7 @@ tr:nth-child(even) {
 }
 .bg { 
   /* The image used */
-  background-image: url("../images/3d-grid-png-image-20.png");
+  background-image: url("../../images/3d-grid-png-image-20.png");
  height: 100%; 
 
 }

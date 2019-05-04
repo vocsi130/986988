@@ -29,6 +29,7 @@ body > div, form {
 
 div {
 	overflow: hidden;
+      padding:  5px;
 }
 
 /* form styles */
