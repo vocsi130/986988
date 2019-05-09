@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="quiz2.css">
+    </head>
+    <body class="back">
+        <h2 class="main">State Management Quiz</h2>
+        <ol>
+        <li> <strong>Can post requests be bookmarked? What are the problems?</strong>
+          <p>An HTTP POST cannot be bookmarked, but since a bookmark only consists of the URL, all of the form parameters will be lost. This will often mean that the web server doesn't know what to do with the request, since it was expecting some form parameters.</p>
+        </li>
+
+        <li>
+        <strong> What is the purpose of request dispatching?</strong>
+          <p> The RequestDispatcher interface provides the facility of dispatching the request to another resource it may be html, servlet or jsp. This interface can also be used to include the content of another resource also. It is one of the way of servlet collaboration.The RequestDispatcher interface provides two methods.</p>
+          <ul>
+          <li> forward() that Forwards a request from a servlet to another resource (servlet, JSP file, or HTML file) on the server.
+           </li>
+         <li>include() that includes the content of a resource (servlet, JSP page, or HTML file) in the response.
+         </li>
+       </ul>
+
+       </li>
+    <li>
+          <strong>What is the difference between redirect and request dispatch?</strong>
+
+         <table border="1" style="width:100%">
+         <tr>
+            <th>requestDispatcher - forward() </th>
+           <th>ReDirect</th>
+           </tr>
+          <tr>
+          <td>When we use forward method, request is transfer to other resource within the same server for further processing.</td>
+          <td>In case of sendRedirect, request is transfer to another resource to different domain or different server for further processing.</td>
+          </tr>
+        <tr>
+        <td>In case of forward, web container handle all process internally and client or browser is not involved.</td>
+       <td>When you use sendRedirect, container transfers the request to client or browser so URL given inside the sendRedirect method is visible as a new request to the client.</td>
+      </tr>
+    <tr>
+     <td>When forward is called on requestdispatcher object we pass request and response objects so our old request object is present on new resource which is going to process our request.</td>
+         <td>In case of sendRedirect call, old request and response objects are lost because it is treated as new request by the browser.</td>
+        </tr>
+      <tr>
+      <td>Visually we are not able to see the forwarded address, it is transparent.</td>
+         <td>In address bar, we are able to see the new redirected address. It is not transparent.</td>
+       </tr>
+
+    <tr>
+         <td>Using forward () method is faster than send redirect.</td>
+       <td>sendRedirect is slower because one extra round trip is required, because completely new request is created and old request object is lost. Two browser request required.</td>
+     </tr>
+     <tr>
+     <td>When we redirect using forward and we want to use same data in new resource we can use request.setAttribute () as we have request object available.</td>
+          <td>But in sendRedirect, if we want to use we have to store the data in session or pass along with the URL</td>
+        </tr>
+
+       </table>
+      </li>
+      <li><strong>What is an attribute ?</strong>
+        <p>An attribute in servlet is an object that can be set, get or removed from request scope , session scope and application scope.There are following 4 attribute specific methods. They are as follows:</p>
+     <ol>
+     <li>public void setAttribute(String name,Object object):sets the given object in the application scope. </li>
+       <li>public Object getAttribute(String name):Returns the attribute for the specified name.</li>
+      <li>public Enumeration getInitParameterNames():Returns the names of the context's initialization parameters as an Enumeration of String objects.</li>
+      <li>public void removeAttribute(String name):Removes the attribute with the given name from the servlet context.</li>
+   </ol>
+   </li>
+
+    <li> <strong>What is the difference between attributes and parameters?</strong>
+     <table border="1" style="width:100%">
+    <tr>
+    <th>Atributes</th>
+     <th>Parameters</th>
+    </tr>
+     <tr>
+    <td>
+      An "attribute" is a Java object name/value pair passed only through the internal JavaServer  processes. (i.e. it can come from a JSP or servlet but not an HTML page.) </td>
+      <td> A "parameter" is a form field name/value pair that is most commonly known for being sent from the client to the server (e.g. a form post) and retrieved from the servlet request.</td>
+   </tr>
+   <tr>
+     <td>Attribute value is Object.</td>
+    <td>Parameter value is a String </td>
+    </tr>
+    <tr>
+    <td> Attributes are set by the server side. For example, you can set a session or request attribute called userId to  indicate the current user</td>
+    <td>Parameters come from the client request.
+     </td>
+   </tr>
+   <tr>
+    <td>Attributes are read/write .You can also set attributes programaticly and retrieve them later.</td>
+   <td>
+    Parameters are read only i.e. generally can be retrieved, but not set.</td>
+   </tr>
+
+    </table>
+  </li>
+   <li> <strong>What are dangers of using attributes?</strong>
+   <p>Since context scope are not thread safe so the value of the attiribute set by one thread can be changed by other thread so the first thread can get suprising result. So getServletContext() method should be synchronized to avoid from this danger.</p>
+    </li>
+<li> <strong>What does it mean to say that http is stateless? Give an example of a stateful protocol.</strong>
+<p>Stateless means HTTP protocol does not remember the Previous Request data in a next new request.Hence we say HTTP as Stateless Protocol. FTP, Telnet  are example of stateful protocol</p>
+</li>
+<li> <strong>Give 5 different methods for maintaining state information (count each attribute scope as one method).</strong>
+<p>There are different methods for maintaing state information whichh are listed below: <ul>
+<li> request scope: destroyed when servlet finishes processing request </li>
+<li>  session scope: destroyed when user closes browser </li>
+<li>  application scope :destroyed when Container stopped. </li>
+<li>  Cookies saved on browser,temporary (deleted when the browser closes)permanent </li>
+ <li>Hidden fields on a form </li>
+</ul>
+</li>
+<li> <strong>How long does a session last?</strong>
+<p> Session lasts as long as browser is open.</li>
+<li><strong> What is a cookie, and how long does a cookie last? </strong>
+<p>Cookies are text files stored on the client computer and they are kept for various information tracking purpose. Java Servlets transparently supports HTTP cookies.The time of expiry of a cookie can be set when the cookie is created. By default the cookie is destroyed when the current browser window is closed, but it can be made to persist for an arbitrary length of time after that.</p></li>
+<li><strong> What is the purpose of URL rewriting?</strong>
+<p>URL rewriting is a better way to maintain sessions and works for the browsers when they don't support cookies. For example, with http://www.google.com/file.htm;sessionid=12345, the session identifier is attached as sessionid=12345 which can be accessed at the web server to identify the client.</p></li>
+<li><strong>Why does the request attribute report &#39null&#39 for the maintaining state demo?</strong></li>
+<p> When the servlet is called second time or even if the page is refreshed the list is null.</p>
+</ol>
+        
+    </body>
+</html>
