@@ -7,3 +7,16 @@ height: 300px;
 .image img {
 display: none;
 }
+
+.right-div {
+    float: left;
+    margin-left: 600px;
+    background-color: skyblue;
+}​
+.left-div {
+    float: left;
+    width: 100px;
+    height: 20px;
+    margin-right: 8px;
+   /* background-color: linen;*/
+}
