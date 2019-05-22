@@ -1,10 +1,11 @@
-var xPuzzSize = 400, yPuzzSize = 400, yPiece = 100, xPiece = 100;
+
+$(document).ready(function(){
+    var xPuzzSize = 400, yPuzzSize = 400, yPiece = 100, xPiece = 100;
 var wX = xPuzzSize - xPiece;
 var wY = yPuzzSize - yPiece;
 
 var positionSpecial;
 
-$(document).ready(function(){
 	$("#puzzlearea div").addClass("puzzlepiece");
 	refreshPositions();
 
