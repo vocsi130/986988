@@ -8,10 +8,7 @@ window.onload = function(){
    var textarea=document.getElementById("mytextarea");
 
         var isStarted = false,
-            speed = 200,
-            arr,
-            intervalId = 0,
-            index = 0;
+            speed = 200,arr,intervalId = 0,     index = 0;
 
         start.onclick = function(e){
             if(arr===undefined) {return;}
@@ -22,7 +19,7 @@ window.onload = function(){
         stop.onclick = function(e){
             stopAction();
         } ;
-		var initialize = function(val){
+        var initialize = function(val){
             arr = val.split("=====\n");
             console.log(arr);
             index = 0;
